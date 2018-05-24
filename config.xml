@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<widget xmlns="http://www.w3.org/ns/widgets"
+xmlns:gap="http://phonegap.com/ns/1.0"
+id="com.phonegap.app8"
+version="1.0.0">
+
+<name>app8 Mostrar aplicaciones</name>
+
+<description>
+	Aplicacion que realiza el anexamiento de las aplicaciones uno, cinco y siete en el dispositivo
+</description>
+
+<author href="https://build.phonegap.com" email="bot.flnetwork@gmail.com">
+Joshua Mayorga Maca
+</author>
+
+<!--Perzonalizar la aplicación y plataforma -->
+<preference name="orientation" value="default"/>
+<!-- preference name="orientation" value="portrait"/> 
+preference name="orientation" value="iandscape"/> -->
+<preference name="target-device" value="universal"/>
+<preference name="fullscreen" value="true"/>
+<preference name="android-installLocation" value="auto"/>
+<preference name="permissions" value="INTERNET"/>
+
+<!--Para accesar a paginas en internet-->
+<allow-intent href="https://*/*"/>
+<acces origin="https://*/*"/>
+<allow-intent href="http://*/*"/>
+<acces origin="http://*/*"/>
+<plugin name="cordova-plugin-whitelist" source="npm"/>
+
+<!--Plugins-->
+<!--Core Plugins-->
+<plugin name="cordova-plugin-device" spec="~1.1.4"/>
+<plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+<plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
+
+<!-- <plugin name="cordova-plugin-geolocation" sourse="npm"/> -->
+<!-- Third part Plugins-->
+
+<!--Colocar icono app-->
+
+<icon src="res/android/mdpi.png"/>
+
+</widget>
